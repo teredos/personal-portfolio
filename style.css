@@ -1,0 +1,212 @@
+/* GENERAL - START */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'NowRegular';
+    font-weight: bold;
+    margin: auto;
+    color: white;
+    background-color: #000120;
+}
+img {
+    max-width: 100%;
+}
+.anchor {
+    display: block;
+    height: 52px;
+    margin-top: -52px;
+    visibility: hidden;
+}
+.light-mode {
+    color: #000120;
+    background-color: white;
+}
+
+/* GENERAL - END */
+
+/* HEADER - START */
+#main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1a1d35;
+}
+#navbar {
+    display: flex;
+    justify-content: center;
+}
+#navbar a {
+    text-decoration: none;
+    color: white;
+    font-family: 'NowRegular';
+}
+#lightbulb-container {
+    right: 6px;
+    align-self: center;
+    position: absolute;
+}
+#lightbulb-button{
+    background-color: #1a1d35;
+    border: 0;
+    color: white;
+}
+#lightbulb-button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.navlink {
+    padding: 15px 30px;
+}
+.navlink:hover {
+    background-color: white;
+    color: #1a1d35;
+    transition: 0.6s;
+}
+/* HEADER - END */
+
+/* WELCOME SECTION - START */
+#welcome-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 100%;
+}
+#welcome-text {
+    font-size: 50px;
+}
+@media screen and (max-width: 900px) {
+    #welcome-text {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 700px) {
+    #welcome-text {
+        font-size: 30px;
+    }
+}
+/* WELCOME SECTION - END */
+
+/* PROJECTS - START */
+#projects {
+    margin-left: 50px;
+    margin-right: 50px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    overflow: auto;
+    height: 100vh;
+}
+.project-tile {
+    margin: 25px;
+    border-radius: 15px;
+    border: 3px solid transparent;
+}
+.project-tile:hover {
+    border: 1px solid transparent;
+}
+.project-tile-link {
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 5fr 1fr;
+}
+.project-tile-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.project-caption-container {
+    background-color: #1a1d35;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.project-caption-container:hover {
+    background-color: white;
+    color: #1a1d35;
+    transition: 0.6s;
+}
+.project-caption {
+    font-size: 3vw;
+}
+#projects-header {
+    font-size: 5vw;
+}
+@media screen and (min-width: 700px) {
+    #projects {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        overflow: visible;
+        height: auto;
+    }
+    .project-caption {
+        font-size: 2vw;
+    }
+}
+@media screen and (min-width: 1150px) {
+    #projects {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 100%;
+    }
+    .project-caption {
+        font-size: 1vw;
+    }
+    #projects-header {
+        font-size: 3vw;
+    }
+}
+/* PROJECTS - END */
+
+/* CONTACT - START */
+#contact {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+#contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#contact-wrapper h2 {
+    font-size: 11vw;
+    margin: 0;
+}
+@media screen and (min-width: 700px) {
+    #contact-wrapper h2 {
+        font-size: 9vw;
+    }
+}
+@media screen and (min-width: 1100px) {
+    #contact-wrapper h2 {
+        font-size: 7vw;
+    }
+}
+#account-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 15px 15px 15px;
+}
+.icon-link {
+    margin: 10px;
+}
+.icon-link:hover {
+    transform: scale(1.1);
+}
+/* CONTACT - END */
